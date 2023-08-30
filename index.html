@@ -8,7 +8,22 @@
 </head>
 <body>
 
-    <header><h1>Rock Paper Scissors</h1></header>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+
+
+    <!--delete later-->
+        <div class="bobs-choice-count">
+            <br>
+            <p>computer randomness check:</p>
+            <p style="font-size: 22px;">(press enter to show the distribution of 100,000 random computer choices)</p>
+            <div>Rock count: <span id="bobs-rock-count">0</span></div>
+            <div>Paper count: <span id="bobs-paper-count">0</span></div>
+            <div>Scissors count: <span id="bobs-scissors-count">0</span></div>
+        </div>
+    <!--same idea here as when eventually I build a function to update the scores-->
+
+    </header>
     
     <div class="body">
 
@@ -26,9 +41,7 @@
             </div>
 
                 <div class="result">
-                <!--    <p>Rock beats Scissors, nice</p>
-                    <p>Paper covers Rock, good work</p>
-                    <p>Scissors beats Paper</p>     -->
+                <p id="result-message"></p>
                 </div>
         </div>
 
