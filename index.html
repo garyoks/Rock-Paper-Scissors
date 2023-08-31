@@ -8,22 +8,7 @@
 </head>
 <body>
 
-    <header>
-        <h1>Rock Paper Scissors</h1>
-
-
-    <!--delete later-->
-        <div class="bobs-choice-count">
-            <br>
-            <p>computer randomness check:</p>
-            <p style="font-size: 22px;">(press enter to show the distribution of 100,000 random computer choices)</p>
-            <div>Rock count: <span id="bobs-rock-count">0</span></div>
-            <div>Paper count: <span id="bobs-paper-count">0</span></div>
-            <div>Scissors count: <span id="bobs-scissors-count">0</span></div>
-        </div>
-    <!--same idea here as when eventually I build a function to update the scores-->
-
-    </header>
+    <header><h1>Rock Paper Scissors</h1></header>
     
     <div class="body">
 
@@ -42,7 +27,13 @@
 
                 <div class="result">
                 <p id="result-message"></p>
+                <br>
+                <p id="declare-winner"></p>
                 </div>
+
+                <br>
+
+                <button id="play-again">Play Again</button>
         </div>
 
 
@@ -63,6 +54,15 @@
         </div>
 
     </div>
+
+    <footer>
+        <div>
+        You might think this game is rigged. Press enter to run the random choice generater 100,000 times to prove that you just suck.
+        </div>
+        <div id="cpu-rock-count"></div>
+        <div id="cpu-paper-count"></div>
+        <div id="cpu-scissors-count"></div>
+    </footer>
     
     <script src="app.js"></script>
 </body>

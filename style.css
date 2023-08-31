@@ -15,6 +15,7 @@ header {
     justify-content: space-around;
     margin: 8rem 4rem;
     margin-left: 1rem;
+    min-height: max-content;
     
 }
 
@@ -90,6 +91,19 @@ span {
 #colon {
     margin-bottom: 10%;
 }
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+#play-again {
+    width: 26rem;
+    height: 8rem;
+    font-size: 4rem;
+    display: none;
+}
+
 
 @media (max-width: 1150px) {
     * {
