@@ -104,6 +104,22 @@ footer {
     display: none;
 }
 
+@keyframes scoreChange {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#bobs-score,
+#user-score {
+    animation: scoreChange 0.3s ease;
+}
 
 @media (max-width: 1150px) {
     * {
