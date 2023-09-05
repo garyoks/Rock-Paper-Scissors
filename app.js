@@ -62,18 +62,14 @@ function game (userChoice) {
 
     if (userChoice === 'rock') {
         if (determine_winner("rock") == false) {            
-//            bobsScore++;
             updateScore(bobsScore);
-//            bobsScore_span.textContent = bobsScore;
             if (bobsScore >= 5) {
                 resultMessage_p.textContent = "Bob chose paper. Paper beats rock";
             } else { 
                 resultMessage_p.textContent = "Bob chose paper. Paper beats rock. You lose this round";
             }
         } else if (determine_winner("rock") === true) {
-//            userScore++;
             updateScore(updateScore);
-//            userScore_span.textContent = userScore;
             if (userScore >= 5) {
                 resultMessage_p.textContent = "Bob chose scissors. Rock beats scissors";
             } else {resultMessage_p.textContent = "Bob chose scissors. Rock beats scissors. You win this round";
@@ -83,18 +79,14 @@ function game (userChoice) {
         }
     } else if (userChoice === 'paper') {
         if (determine_winner("paper") == false) {
-//            bobsScore++;
             updateScore(bobsScore);
-//            bobsScore_span.textContent = bobsScore;
             if (bobsScore >= 5) {
                 resultMessage_p.textContent = "Bob chose scissors. Scissors beats paper";
             } else { 
                 resultMessage_p.textContent = "Bob chose scissors. Scissors beats paper. You lose this round";
             }
         } else if (determine_winner("paper") === true) {
-//            userScore++;
             updateScore(userScore);
-//            userScore_span.textContent = userScore;
             if (userScore >= 5) {
                 resultMessage_p.textContent = "Bob chose CHOICE. USERCHOICE beats CHOICE";
             } else {resultMessage_p.textContent = "Bob chose rock. Paper beats rock. You win this round";
@@ -104,18 +96,14 @@ function game (userChoice) {
         }
     } if (userChoice === 'scissors') {
         if (determine_winner("scissors") == false) {
-//            bobsScore++;
             updateScore(bobsScore);
-//            bobsScore_span.textContent = bobsScore;
             if (bobsScore >= 5) {
                 resultMessage_p.textContent = "Bob chose rock. Rock beats scissors";
             } else { 
                 resultMessage_p.textContent = "Bob chose rock. Rock beats scissors. You lose this round";
             }  
         } else if (determine_winner("scissors") === true) {
-//            userScore++;
             updateScore(userScore);
-//            userScore_span.textContent = userScore;
             if (userScore >= 5) {
                 resultMessage_p.textContent = "Bob chose CHOICE. USERCHOICE beats CHOICE";
             } else {resultMessage_p.textContent = "Bob chose paper. Scissors beats paper. You win this round";
